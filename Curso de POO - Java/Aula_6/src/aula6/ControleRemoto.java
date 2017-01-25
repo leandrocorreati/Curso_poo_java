@@ -48,22 +48,22 @@ public class ControleRemoto implements Controlador
     }
 
     //METÓDOS ABSTRATOS DA INTERFACE(CONTROLADOR)IMPLEMENTADOS
-    @Override
-    public boolean ligar() 
+     @Override
+    public void ligar() 
     {
         setLigado(true);
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
-    public boolean desligar() 
+    public void desligar() 
     {
         setLigado(false);
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
-    public boolean abrirMenu() 
+    public void abrirMenu() 
     {
         System.out.println(getLigado());
         System.out.println(getVolume());
@@ -77,14 +77,14 @@ public class ControleRemoto implements Controlador
     }
 
     @Override
-    public boolean fecharMenu() 
+    public void fecharMenu() 
     {
         System.out.println("Fechando Menu");
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
-    public int maisVolume() 
+    public void maisVolume() 
     {
         if (getLigado()==true)
         {
@@ -94,7 +94,7 @@ public class ControleRemoto implements Controlador
     }
 
     @Override
-    public int menosVolume() 
+    public void menosVolume() 
     {
         if (getLigado()==true)
         {
@@ -104,7 +104,7 @@ public class ControleRemoto implements Controlador
     }
 
     @Override
-    public boolean ligaMudo() 
+    public void ligaMudo() 
     {
         if (getLigado()== true && getVolume() > 0 )
         {
@@ -115,7 +115,7 @@ public class ControleRemoto implements Controlador
     }
 
     @Override
-    public boolean desligarMudo() 
+    public void desligarMudo() 
     {
         if (getLigado()== true && getVolume() == 0 )
         {
@@ -125,7 +125,7 @@ public class ControleRemoto implements Controlador
     }
 
     @Override
-    public boolean play() 
+    public void play() 
     {
         if(getLigado() == true && getTocando() == false)
         {
@@ -135,7 +135,7 @@ public class ControleRemoto implements Controlador
     }
 
     @Override
-    public boolean pause() 
+    public void pause() 
     {
          if(getLigado() == true && getTocando() == true)
         {

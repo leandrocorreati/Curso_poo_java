@@ -1,14 +1,28 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package aula7;
 
-/**
- *
- * @author leandro
- */
-public class aula7 {
+public class aula7 
+{
+    public static void main(String[] args)
+    {
+        Lutador l[ ] = new Lutador[6];
+        l[0] = new Lutador("Leandro", "Brasil",29,1.56f, 85.8f,11,2,1);
+        l[1] = new Lutador("Leandro", "Brasil",29,1.56f, 85.8f,11,2,1);
+        l[2] = new Lutador("Leandro", "Brasil",29,1.56f, 85.8f,11,2,1);
+        l[3] = new Lutador("Leandro", "Brasil",29,1.56f, 85.8f,11,2,1);
+        l[4] = new Lutador("Leandro", "Brasil",29,1.56f, 85.8f,11,2,1);
+        l[5] = new Lutador("Leandro", "Brasil",29,1.56f, 85.8f,11,2,1);
+        
+        for(int i = 0  ; i <= 5; i++)
+        {
+            l[i].apresentar();
+        }
+       
+//        String vetor [] = new String[5];
+//       
+    }
+   
+    
+    
     
 }
