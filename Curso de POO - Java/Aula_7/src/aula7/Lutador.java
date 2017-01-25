@@ -41,7 +41,7 @@ public class Lutador
         System.out.println(getIdade() + " anos");
         System.out.println("Pesando " + getPeso() + "Kg");
         System.out.println("Categoria: " + this.getCategoria());
-        System.out.println("Com o cartel de " + getVitorias() + " vitorias, " + getEmpates() + " empates e " + getDerrotas() + " derrotas");
+        System.out.println("Com o cartel de " + this.getVitorias() + " vitorias, " + this.getEmpates() + " empates e " + this.getDerrotas() + " derrotas");
     }
     public void status()
     {
@@ -49,7 +49,7 @@ public class Lutador
     }
     public void ganharLuta()
     {
-        setVitorias(getVitorias()+1);
+        setVitorias(vitorias +1);
         
     }
     public void perderLuta()
