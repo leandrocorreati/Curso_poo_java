@@ -64,12 +64,12 @@ public class Lutador
     
     // METÓDOS GETTERS E SETTERS
 
-    private String getNome() 
+    public String getNome() 
     {
         return nome;
     }
 
-    private void setNome(String nome) 
+    public void setNome(String nome) 
     {
         this.nome = nome;
     }
@@ -114,12 +114,12 @@ public class Lutador
         this.setCategoria();
     }
 
-    private String getCategoria() 
+    public String getCategoria() 
     {
         return categoria;
     }
 
-    private void setCategoria() 
+    public void setCategoria() 
     {
         if (getPeso() < 52.0 )
         {
