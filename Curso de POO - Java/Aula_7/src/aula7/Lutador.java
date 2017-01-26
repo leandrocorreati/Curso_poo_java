@@ -55,7 +55,7 @@ public class Lutador
     public void perderLuta()
     {
         setDerrotas(getDerrotas() + 1);
-        
+        // 3, 2,1,5, 4
     }
     public void empatarLuta()
     {
