@@ -14,9 +14,9 @@ public class Professor extends Pessoa
 //        
 //    }
     
-    public void receberAumento()
+    public void receberAumento(float aumento)
     {
-        
+        this.salario = salario + aumento;
     }
 
     public String getEspecialidae() {

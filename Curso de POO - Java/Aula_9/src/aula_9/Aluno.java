@@ -18,6 +18,7 @@ public class Aluno extends Pessoa
     
      public void cancelaMatricula()
      {
+         System.out.println("Cancelar Matricula");
          
      }
 

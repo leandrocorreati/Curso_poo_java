@@ -14,6 +14,11 @@ public class Pessoa
         this.idade++;
     }
 
+    @Override
+    public String toString() {
+        return "Pessoa{" + "nome=" + nome + ", idade=" + idade + ", sexo=" + sexo + '}';
+    }
+
     //METÓDOS ACESSORES
     public String getNome() {
         return nome;

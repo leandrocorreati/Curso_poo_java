@@ -24,6 +24,12 @@ public class Aula_9
         p3.setSalario(2500.90f);
         p4.setSetor("Atendimento");
         
+        p3.receberAumento(200f);
+        System.out.println(p3.getSalario());
+        
+        System.out.println(p1.toString());
+        System.out.println(p2.toString());
+        
        // p4.setSalario(454f);
        // p2.mudarTrabalho()
           
