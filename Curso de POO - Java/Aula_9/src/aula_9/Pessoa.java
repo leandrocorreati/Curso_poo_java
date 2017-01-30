@@ -4,14 +4,14 @@ package aula_9;
 public class Pessoa
 {
     private String nome;
-    private int idae;
+    private int idade;
     private String sexo;
     
     
     //METÓDO PERSONALIZADO
     public void fazerAniversario()
     {
-        
+        this.idade++;
     }
 
     //METÓDOS ACESSORES
@@ -24,11 +24,11 @@ public class Pessoa
     }
 
     public int getIdae() {
-        return idae;
+        return idade;
     }
 
     public void setIdae(int idae) {
-        this.idae = idae;
+        this.idade = idae;
     }
 
     public String getSexo() {
