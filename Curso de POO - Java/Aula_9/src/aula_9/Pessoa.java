@@ -20,7 +20,8 @@ public class Pessoa
     }
 
     //METÓDOS ACESSORES
-    public String getNome() {
+    public String getNome() 
+    {
         return nome;
     }
 
