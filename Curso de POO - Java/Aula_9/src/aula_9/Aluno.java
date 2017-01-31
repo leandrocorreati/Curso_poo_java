@@ -1,7 +1,7 @@
 
 package aula_9;
 
-public class Aluno extends Pessoa
+public class Aluno extends Pessoa // O extends é usado para criar a herança. Nesse caso a classe "Aluno" herda da classe "Pessoa"
 {
 //     Atributos
 //    private String nome;
