@@ -1,11 +1,20 @@
 package aula_14;
-public class Pessoa 
+public abstract class Pessoa // CLASSE ABSTRATA QUE NÃO PODE SER INSTANCIADA
 {
     // ATRIBUTOS
     private String nome;
     private int idade;
     private String sexo;
     private String experiencia;
+
+    // METODO CONSTRUTOR
+    public Pessoa(String nome, int idade, String sexo, String experiencia)
+    {
+        this.nome = nome;
+        this.idade = idade;
+        this.sexo = sexo;
+        this.experiencia = experiencia;
+    }
 
     // METODOS ACESSORES
     public String getNome() {
@@ -45,4 +54,10 @@ public class Pessoa
     {
         
     }
+
+    @Override
+    public String toString() {
+        return "Pessoa{" + "nome=" + nome + ", idade=" + idade + ", sexo=" + sexo + ", experiencia=" + experiencia + '}';
+    }
+    
 }

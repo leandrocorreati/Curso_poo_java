@@ -3,9 +3,20 @@ public class Video implements AcoesVideo
 {
     // ATRIBUTOS
     private String titulo;
-    private String avaliacao;
+    private int avaliacao;
     private int views;
     private int curtidas;
+    private boolean reproduzindo;
+    
+    // CONSTRUTOR
+    public Video(String titulo) 
+    {
+        this.titulo = titulo;
+        this.avaliacao = 1;
+        this.views = 0;
+        this.curtidas = 0;
+        this.reproduzindo = false;
+    }
 
     // METODOS ACESSORES
     public String getTitulo() {
@@ -16,11 +27,11 @@ public class Video implements AcoesVideo
         this.titulo = titulo;
     }
 
-    public String getAvaliacao() {
+    public int getAvaliacao() {
         return avaliacao;
     }
 
-    public void setAvaliacao(String avaliacao) {
+    public void setAvaliacao(int avaliacao) {
         this.avaliacao = avaliacao;
     }
 
@@ -44,26 +55,38 @@ public class Video implements AcoesVideo
         return reproduzindo;
     }
 
-    public void setReproduzindo(boolean reproduzindo) {
+    public void setReproduzindo(boolean reproduzindo)
+    {
         this.reproduzindo = reproduzindo;
     }
-    private boolean reproduzindo;
+  
     
 
     // METODOS DA INTERFACE A SEREM IMPLEMENTADOS
     @Override
     public void play() 
     {
+        this.reproduzindo = true;
     }
 
     @Override
     public void pause() 
     {
+        this.reproduzindo = false;
     }
 
     @Override
     public void like() 
     {
+        this.curtidas++;
     }
+
+    
+    public String informacoes()
+    {
+        return "Video{" + "titulo=" + titulo + ", avaliacao=" + avaliacao + ", views=" + views + ", curtidas=" + curtidas + ", reproduzindo=" + reproduzindo + '}';
+    }
+    
+    
     
 }
