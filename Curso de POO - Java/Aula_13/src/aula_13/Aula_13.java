@@ -17,7 +17,6 @@ public class Aula_13 {
         dog.reagir(false);
         dog.reagir(6, 2);
         
-        
         // REVISÃO:
         // 1- POLIMORFISMO DE SOBREPOSIÇÃO - MESMA ASSINATURA CLASSES DIFERENTES 
         // 2- POLIMORFISMO DE SOBRECARGA - ASSINATURAS DIFERENTES MESMA CLASSE
