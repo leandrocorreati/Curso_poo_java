@@ -35,6 +35,7 @@ public class Video implements AcoesVideo // USO DA INTERFACE E IMPLEMENTAÇÃO D
 
     public void setAvaliacao(int avaliacao)
     {
+        int nova = ((this.avaliacao + avaliacao) / this.views);
         this.avaliacao = avaliacao;
     }
 

@@ -13,6 +13,7 @@ public class Aula_14 {
         a[2] = new Aluno("Leonardo" , 9 , "Masculino" , "positiva" , "leo_pedroso@gamil.com");    
         Visualizacao vis[ ] = new Visualizacao[2] ; 
         vis [0] = new Visualizacao(a[0] ,v[2]);
+        vis [0].avaliar(30f);
         vis [1] = new Visualizacao(a[0] ,v[1]);
         System.out.println(vis[0].toString());
         System.out.println(vis[1].toString());
