@@ -10,16 +10,26 @@ public class Visualizacao
     {
         this.espectador = espectador;
         this.filme = filme;
-        this.espectador.setTotalAssistido(this.espectador.getTotalAssistido() + 1); /* 2º AGREGAÇÃO: Para alterar o atributo (totalAssitido)  da classe Aluno, 
-                                                                                                                                     o atributo espectador da classe Visualizacao recebe no metodo construtor 'this.espectador.getTotalAssistido() + 1' que 
-                                                                                                                                     significa que fiz uma referencia a outra classe pelo atributo desta que recebe ela como tipo.*/
+        this.espectador.setTotalAssistido(this.espectador.getTotalAssistido() + 1); // 2º AGREGAÇÃO: Para alterar o atributo (totalAssitido)  da classe Aluno, 
+        this.filme.setViews(this.filme.getViews() + 1);                                                // o atributo espectador da classe Visualizacao recebe no metodo construtor 'this.espectador.getTotalAssistido() + 1' que 
+                                                                                                                             // significa que fiz uma referencia a outra classe pelo atributo desta que recebe ela como tipo.*/
     }
     
-    // METODOS PERSONALIZADOS
+    //  // METODO PERSONALIZADO COM SOBRECARGA
     public void avaliar()
+    {
+        this.filme.setAvaliacao(5);
+    }
+    
+    public void avaliar(int nota)
+    {
+        this.filme.setAvaliacao(nota);
+    }
+    public void avaliar(float porc)
     {
         
     }
+     
     
     // METODOS ACESSORES
     public Aluno getEspectador()
@@ -40,15 +50,7 @@ public class Visualizacao
         this.filme = filme;
     }
     
-    public void avaliar(float nota)
-    {
-        
-    }
     
-    public void avaliar(int porcentagem)
-    {
-        
-    }
     
     // METODO PARA MOSTRAR OS ATRIBUTOS 
     @Override
