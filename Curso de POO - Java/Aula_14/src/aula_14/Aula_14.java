@@ -12,18 +12,25 @@ public class Aula_14 {
         a[1] = new Aluno("Larissa" , 32 , "Feminino" , "negativa" , "larissa_p@gmail.com");
         a[2] = new Aluno("Leonardo" , 9 , "Masculino" , "positiva" , "leo_pedroso@gamil.com");    
                 
+        Visualizacao vis = new Visualizacao(a[0] ,v[2]) ; 
         
-        for (int i = 0; i < 3; i++)
-        {
-            System.out.println(v[i].informacoes());
-        }
+        System.out.println(vis.toString());
+        /* Quando eu instancio um objeto da classe <Visualizacao>, como há um metodo construtor na classe <Visualizacao> é necessario que se passe dois parametros. 
+        os parametros a serem passados nesse caso são; objetos de classes  já instanciados. 
+        Na classe <Visualizacao> os atributos da classe receberam o  tipo de outras classes(EX: private Aluno espectador)*/
         
-        System.out.println("================================================");
         
-        for (int i = 0; i < 3; i++)
-        {
-            System.out.println(a[i].toString());
-        }
+//        for (int i = 0; i < 3; i++)
+//        {
+//            System.out.println(v[i].informacoes());
+//        }
+//        
+//        System.out.println("================================================");
+//        
+//        for (int i = 0; i < 3; i++)
+//        {
+//            System.out.println(a[i].toString());
+//        }
     }
     
 }

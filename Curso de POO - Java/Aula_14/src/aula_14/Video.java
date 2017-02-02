@@ -1,5 +1,5 @@
 package aula_14;
-public class Video implements AcoesVideo
+public class Video implements AcoesVideo // USO DA INTERFACE E IMPLEMENTAÇÃO DOS SEUS METODOS 
 {
     // ATRIBUTOS
     private String titulo;
@@ -19,11 +19,13 @@ public class Video implements AcoesVideo
     }
 
     // METODOS ACESSORES
-    public String getTitulo() {
+    public String getTitulo()
+    {
         return titulo;
     }
 
-    public void setTitulo(String titulo) {
+    public void setTitulo(String titulo) 
+    {
         this.titulo = titulo;
     }
 
@@ -31,27 +33,33 @@ public class Video implements AcoesVideo
         return avaliacao;
     }
 
-    public void setAvaliacao(int avaliacao) {
+    public void setAvaliacao(int avaliacao)
+    {
         this.avaliacao = avaliacao;
     }
 
-    public int getViews() {
+    public int getViews() 
+    {
         return views;
     }
 
-    public void setViews(int views) {
+    public void setViews(int views)
+    {
         this.views = views;
     }
 
-    public int getCurtidas() {
+    public int getCurtidas() 
+    {
         return curtidas;
     }
 
-    public void setCurtidas(int curtidas) {
+    public void setCurtidas(int curtidas)
+    {
         this.curtidas = curtidas;
     }
 
-    public boolean isReproduzindo() {
+    public boolean isReproduzindo()
+    {
         return reproduzindo;
     }
 
@@ -81,8 +89,9 @@ public class Video implements AcoesVideo
         this.curtidas++;
     }
 
-    
-    public String informacoes()
+    // METODO PARA MOSTRAR OS ATRIBUTOS
+    @Override
+    public String toString()
     {
         return "Video{" + "titulo=" + titulo + ", avaliacao=" + avaliacao + ", views=" + views + ", curtidas=" + curtidas + ", reproduzindo=" + reproduzindo + '}';
     }

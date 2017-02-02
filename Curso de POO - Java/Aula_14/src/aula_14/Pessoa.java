@@ -55,9 +55,10 @@ public abstract class Pessoa // CLASSE ABSTRATA QUE NÃO PODE SER INSTANCIADA
         
     }
 
+    // METODO PARA MOSTRAR OS ATRIBUTOS 
     @Override
     public String toString() {
-        return "Pessoa{" + "nome=" + nome + ", idade=" + idade + ", sexo=" + sexo + ", experiencia=" + experiencia + '}';
+        return "" + "" + nome + ", idade=" + idade + ", sexo=" + sexo + ", experiencia=" + experiencia + '}';
     }
     
 }
