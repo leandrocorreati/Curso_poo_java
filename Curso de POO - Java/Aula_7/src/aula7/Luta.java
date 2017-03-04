@@ -6,7 +6,7 @@ public class Luta
 {
     //ATRIBUTOS 
     
-     private Lutador desafiante;  // O tipo colocado é abstrato  - significa que a instancia da classe Lutador (o valor atribuido aos atributos de "Lutador" quando ela é instanciada(criado um objeto)
+     public Lutador desafiante;  // O tipo colocado é abstrato  - significa que a instancia da classe Lutador (o valor atribuido aos atributos de "Lutador" quando ela é instanciada(criado um objeto)
                                                                                               //  na classe principal(main) é que  dão o tipo ao atributo na classe "Luta". ISSO SE CHAMA AGREGAÇÃO !!!!
      private Lutador desafiado;
      private int rounds;
@@ -67,7 +67,7 @@ public class Luta
      
      // METÓDOS ACESSORES ( GETTERS E SETTERS )
      
-    private Lutador getDesafiante() {
+    public Lutador getDesafiante() {
         return desafiante;
     }
 
@@ -98,5 +98,8 @@ public class Luta
     private void setAprovada(boolean aprovada) {
         this.aprovada = aprovada;
     }
+
+    
+   
     
 }

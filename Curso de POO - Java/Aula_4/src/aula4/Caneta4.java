@@ -10,6 +10,7 @@ public class Caneta4
     private boolean tampada; //ATRIBUTOS
     private String cor;      //ATRIBUTOS
 
+    // Construtor
     public Caneta4(String modelo, float ponta, boolean tampada, String cor) // Para gerar automaticamente o metódo construtor digite 
                                                                             // Ctrl + space, e a IDE irá sugerir o construtor.
     {

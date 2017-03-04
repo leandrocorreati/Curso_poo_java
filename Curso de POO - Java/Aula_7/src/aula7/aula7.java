@@ -1,6 +1,9 @@
 
 package aula7;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class aula7 
 {
     public static void main(String[] args)
@@ -22,6 +25,11 @@ public class aula7
        
        ufc.marcarLuta(l[0], l[1]);
        ufc.lutar();
+//       Luta lt = new Luta();
+       
+        System.out.println("=============");
+        ufc.desafiante.apresentar();
+        
        
     }
    
